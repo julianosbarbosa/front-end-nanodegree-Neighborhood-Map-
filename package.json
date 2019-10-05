@@ -1,0 +1,41 @@
+{
+  "name": "mapaDoBairro",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "escape-string-regexp": "^1.0.5",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-foursquare": "^1.0.3",
+    "react-google-maps": "^9.4.5",
+    "react-notifications": "^1.4.3",
+    "react-responsive-modal": "^3.5.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.8",
+    "recompose": "^0.30.0",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

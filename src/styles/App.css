@@ -1,0 +1,263 @@
+.app {
+	text-align: center;
+	height: 100%;
+}
+
+.information{
+	color: #fff;
+	float: right;
+	margin-right: 10px;
+	padding-top: 9px;
+}
+
+.nav {
+	background: #282c34;
+	border-bottom: 2px solid grey;
+	position: fixed;
+	top: 0;
+	height: 50px;
+	width: 100%;
+	font-size: 1.25em;
+	z-index: 2;
+}
+
+.nav a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 11px 1em;
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+	
+}
+
+.nav a:hover {
+	background: #111;
+	cursor: pointer;
+}
+
+.btn {
+	float: left;
+}
+
+button[type="button"] {
+	color: #fff;
+    float: left;
+    margin-top: 10px;
+	background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.btn-right {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 11px 1em;
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+	float: right;
+}
+
+.btn-right:hover {
+	background: #111;
+	cursor: pointer;
+}
+
+
+.sidebar {
+	position: fixed;
+	border-right: 2px solid grey;
+	width: 18%;
+	font-size: 1.25em;
+	overflow-y: auto;
+	top: 0;
+	bottom: 0;
+	margin-top: 52px;
+	color: grey;
+	background: black;
+	z-index: 1; 
+}
+
+.filter {
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	color: grey;
+    background: #fff;
+    margin: 24px 0;
+	font-size: 1em;
+	border: 0;
+	outline: none;
+}
+
+.sidebar-inner {
+	margin: -20px 0;
+}
+
+.selected {
+	background: #282c34;
+}
+
+.sidebar-inner:hover {
+	background: #282c34;
+	cursor: pointer;
+}
+
+.sidebar-toggle {
+	display: none;
+}
+
+
+.map {
+	position: fixed;
+	margin-left: 18%;
+	margin-top: 52px;
+	overflow-y: hidden;
+	width: 82%;
+	top: 0;
+	bottom: 0;
+	color: white;
+	overflow: auto;
+	z-index: 0;
+}
+
+.map-toggle {
+	position: fixed;
+	margin-top: 52px;
+	overflow-y: hidden;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	color: white;
+	overflow: auto;
+	z-index: 0;
+}
+
+#map {
+	height: 100%;
+}
+
+
+.imagem {
+	display: block;
+	margin:auto;
+	max-width: 100%;
+}
+
+.link {
+	color: #282c34;
+}
+
+.infowindow {
+	color: #282c34;
+}
+
+.infowindow:hover {
+	cursor: pointer;
+}
+
+.imagem-infowindow {
+	height: 200px;
+}
+
+.btn-delete{
+	background: #f44336;
+	border: none;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 10px 2px;
+	cursor: pointer;
+	border-radius: 8px;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+	float: right;
+}
+
+.btn-delete:hover {
+	background: #d72315;
+}
+
+
+.local-choose {
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+	padding: 20px;
+}
+
+.local-choose:hover {
+	background: rgba(0, 225, 0, 0.25);
+}
+
+
+@media screen and (max-width: 1200px) {
+	.sidebar {
+		width: 30%;
+	}
+
+	.map {
+		margin-left: 30%;
+		width: 69.9%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.sidebar {
+		display: none;
+	}
+
+	.map {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.sidebar-toggle {
+		display: block;
+		position: fixed;
+		border-right: 2px solid grey;
+		font-size: 1.5em;
+		overflow-y: auto;
+		top: 0;
+		bottom: 0;
+		margin-top: 52px;
+		color: grey;
+		background: black;
+		z-index: 1;
+		width: 45%;
+	}
+
+	.map-toggle {
+		margin-left: 45%;
+		width: 54.9%;
+	}
+}
+
+@media screen and (max-width: 435px) {
+
+	.nav a {
+		padding: 11px 0.5em;
+	}
+
+	.btn-right {
+		padding: 11px 0.5em;
+	}
+
+	.sidebar-toggle {
+		width: 65%;
+	}
+
+	.map-toggle {
+		margin-left: 65%;
+		width: 44.9%;
+	}
+}
